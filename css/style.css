@@ -1,0 +1,225 @@
+html, body{
+    margin:0;
+    padding:0;
+    height: 100%;
+    background: #2f283f;
+    font-family: "Roboto", helvetica, arial, sans-serif;
+    min-width: 600px;
+
+}
+table {
+    table-layout: fixed;
+    width: 100%;
+}
+/* шапка */
+#header{
+    background:#2f283f;
+    height: 125px;
+    position: fixed;
+    z-index: 4;
+    top: 0;
+
+}
+/* верхн€€ часть шапки*/
+#headerName{
+    background:white;
+    height: 65px;
+}
+/* Ёлементы верхней части шапки: headerName*/
+#checkZone{
+    box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    position: relative;
+    height: 65px;
+    float: left;
+    width: 20%;
+    background-color: #EBEBEB;
+    border-right: 4px solid #9ea7af
+    /*background-image: linear-gradient(to bottom, #2f283f, #9ea7af);*/
+}
+#imageZone1{
+    position: relative;
+    height: 65px;
+    width: 30%;
+    float: left;
+    overflow:hidden;
+    direction: rtl;
+
+}
+#imageZone2{
+    position: relative;
+    height: 65px;
+    width: 30%;
+    float: left;
+
+}
+#timeZone{
+    box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    position: relative;
+    height: 65px;
+    float: right;
+    background-color: #EBEBEB;
+    /*background-image: linear-gradient(to bottom, #2f283f, #9ea7af);*/
+    width: 20%;
+    text-align: center;
+    vertical-align: middle;
+    border-left: 4px solid #9ea7af;
+    padding-top: 10px;
+    font-size: 42px;
+    color: #2f283f;
+}
+/*Ќижн€€ часть шапки*/
+#headerTable{
+    border-top: 4px solid #9ea7af;
+    border-bottom: 4px solid #9ea7af;
+}
+/* Ёлементы нижней части шапки headerTable*/
+#headerTable tr{
+    height: 50px;
+}
+#headerTable th{
+    font-size: 22px;
+    font-weight: 100;
+    background: #2f283f;
+    color:#D5DDE5;
+}
+/* “аблица */
+#container{
+    padding-top: 126px;
+}
+#mainTable {
+    position: relative;
+    /* nth-child не подходит, т.к. при выводе только прилетов/отлетов сбиветс€
+    nth-type тоже не подходит, т.к. дл€ его использовани€ надо сильно реструктурировать таблицу*/
+    background: -webkit-repeating-linear-gradient(#EBEBEB 73px, #EBEBEB 146px, #fafafa 146px, #fafafa 219px);
+    background: repeating-linear-gradient(#EBEBEB 73px, #EBEBEB 146px, #fafafa 146px, #fafafa 219px);
+    height: 100%;
+    font-weight:300;
+    font-size:16px;
+    border-collapse: collapse;
+    z-index: 3;
+    overflow: hidden;
+}
+#mainTable tr{
+    /*background:#fafafa;*/
+    color:#666B85;
+    font-weight:normal;
+}
+#mainTable td{
+    border: 1px solid #C1C3D1;
+    position: relative;
+    height: 70px;
+    margin: 5px;
+}
+.btn {
+    position: absolute;
+    cursor: pointer;
+    text-align: center;
+    vertical-align: middle;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    top: 0;
+    padding-top: 25px;
+    text-overflow: clip;
+    overflow: hidden;
+
+}
+.cell3 .btn img, .cell1 .btn img{
+    float: left;
+    margin-left: 10px;
+    margin-top: -15px;
+}
+.cell3 .btn img{
+    width: 120px;
+    height: 50px;
+    background: white;
+    border: 2px solid #9ea7af;
+}
+.span1, .span3{
+    position: relative;
+    margin-top: 25px;
+    padding-top: 25px;
+}
+
+#head1, #head9, .cell1, .cell9 {
+    width: 10%;
+}
+#head2, .cell2{
+    width: 8%;
+}
+ #head8, .cell8{
+    width: 12%;
+}
+#head7, .cell7{
+    width: 5%;
+}
+#head6, .cell6{
+    width: 7%;
+}
+#head4, #head5,  .cell4, .cell5 {
+    width: 15%;
+}
+#head3, .cell3{
+    width: 17%;
+}
+
+ /* чекбоксы */
+#checkboxArrival:not(:checked) ~ * tr.arrival{
+    display: none;
+}
+#checkboxDeparture:not(:checked) ~ * tr.departure{
+    display: none;
+}
+#checkboxArrival, #checkboxDeparture, #labelArrival, #labelDeparture{
+    position: fixed;
+    top: 10px;
+    left: 5%;
+    z-index: 5;
+    font-size: 18px;
+}
+#labelArrival, #labelDeparture{
+    left: 9%;
+}
+#labelArrival{
+    top: 8px;
+}
+#checkboxDeparture, #labelDeparture{
+    top: 40px;
+}
+#labelDeparture{
+    top: 38px;
+}
+/* ховеры */
+tbody td:hover {
+     background: #ffa;
+     color: #2f283f;
+ }
+/* т.к. у столбца нету своего тега, использую данный метод подстветки, создает элемент шириной с €чейку, убираем на задний план z-index'ом*/
+#mainTable td:hover::after {
+    background-color: #ffa;
+    opacity: 0.4;
+    content: '';
+    height: 10000px;
+    left: 0;
+    position: absolute;
+    top: -5000px;
+    width: 100%;
+    z-index: 1;
+}
+/* к строчке применю тот же метод (вместо td:hover)*/
+#mainTable td:hover::before {
+    background-color: #ffa;
+    opacity: 0.4;
+    content: '';
+    height: 100%;
+    left: -5000px;
+    position: absolute;
+    top: 0;
+    width: 10000px;
+    z-index: 1;
+}
+
