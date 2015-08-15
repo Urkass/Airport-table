@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/window.css" rel="stylesheet">
+    <link href="css/media.css" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Онлайн табло аэропорта</title>
+</head>
+<body>
+<div class="window">
+
+    <input class="window-open" id="window-1" type="checkbox" hidden>
+    <div class="window-wrap" aria-hidden="true" role="dialog">
+        <label class="window-overlay" for="window-1"></label>
+        <div class="window-dialog">
+            <div class="window-header">
+                <h2>SU 1852</h2>
+                <label class="btn-close" for="window-1" aria-hidden="true">×</label>
+            </div>
+            <div class="window-body">
+                <p><span class="winlet">Тип рейса: </span><span class="winInfo"> Прилет</span></p>
+                <p><span class="winlet">Номер рейса:  </span><span class="winInfo">AF 984</span></p>
+                <p><span class="winlet">Авиакомпания:  </span><span class="winInfo">AirFrance</span></p>
+                <p><span class="winlet">Тип воздушного судна:  </span><span class="winInfo">Боинг B-737</span></p>
+                <p><span class="winlet">Аэропорт назначения:  </span><span class="winInfo">Барселона (Эль-Прат)</span></p>
+                <p><span class="winlet">Терминал:  </span><span class="winInfo">A</span></p>
+                <p><span class="winlet">Плановое время:  </span><span class="winInfo"> 05:05</span></p>
+                <p><span class="winlet">Статус рейса:  </span><span class="winInfo">Приземлился</span></p>
+                <p><span class="winlet">Примечание:  </span><span class="winInfo"></span></p>
+
+            </div>
+
+        </div>
+    </div>
+    </div>
+<div class="window">
+    <input class="window-open" id="window-2" type="checkbox" hidden>
+    <div class="window-wrap" aria-hidden="true" role="dialog">
+        <label class="window-overlay" for="window-2"></label>
+        <div class="window-dialog">
+            <div class="window-header">
+                <h2>AF 984</h2>
+                <label class="btn-close" for="window-2" aria-hidden="true">×</label>
+            </div>
+            <div class="window-body">
+                <p><span class="winlet">Тип рейса: </span><span class="winInfo">Вылет</span></p>
+                <p><span class="winlet">Номер рейса:  </span><span class="winInfo">SU 1852</span></p>
+                <p><span class="winlet">Авиакомпания:  </span><span class="winInfo">Аэрофлот</span></p>
+                <p><span class="winlet">Тип воздушного судна:  </span><span class="winInfo">Туполев Ту-154</span></p>
+                <p><span class="winlet">Аэропорт назначения:  </span><span class="winInfo">Челябинск</span></p>
+                <p><span class="winlet">Терминал:  </span><span class="winInfo">B</span></p>
+                <p><span class="winlet">Плановое время:  </span><span class="winInfo"> 9:00</span></p>
+                <p><span class="winlet">Статус рейса:  </span><span class="winInfo">Отправлен</span></p>
+                <p><span class="winlet">Примечание:  </span><span class="winInfo"></span></p>
+            </div>
+
+        </div>
+    </div>
+</div>
+<div class="window">
+    <input class="window-open" id="window-3" type="checkbox" hidden>
+    <div class="window-wrap" aria-hidden="true" role="dialog">
+        <label class="window-overlay" for="window-3"></label>
+        <div class="window-dialog">
+            <div class="window-header">
+                <h2>AF 2467</h2>
+                <label class="btn-close" for="window-3" aria-hidden="true">×</label>
+            </div>
+            <div class="window-body">
+                <p><span class="winlet">Тип рейса: </span><span class="winInfo">Вылет</span></p>
+                <p><span class="winlet">Номер рейса:  </span><span class="winInfo">AF 2467</span></p>
+                <p><span class="winlet">Авиакомпания:  </span><span class="winInfo">AirFrance</span></p>
+                <p><span class="winlet">Тип воздушного судна:  </span><span class="winInfo">Аэробус A310</span></p>
+                <p><span class="winlet">Аэропорт назначения:  </span><span class="winInfo">Лондон (Хитроу)</span></p>
+                <p><span class="winlet">Терминал:  </span><span class="winInfo">C</span></p>
+                <p><span class="winlet">Плановое время:  </span><span class="winInfo"> 09:41</span></p>
+                <p><span class="winlet">Статус рейса:  </span><span class="winInfo">Задержан до 10:40</span></p>
+                <p><span class="winlet">Примечание:  </span><span class="winInfo"></span></p>
+            </div>
+
+        </div>
+    </div>
+</div>
+<div class="window">
+    <input class="window-open" id="window-4" type="checkbox" hidden>
+    <div class="window-wrap" aria-hidden="true" role="dialog">
+        <label class="window-overlay" for="window-4"></label>
+        <div class="window-dialog">
+            <div class="window-header">
+                <h2>AZ 5215</h2>
+                <label class="btn-close" for="window-4" aria-hidden="true">×</label>
+            </div>
+            <div class="window-body">
+                <p><span class="winlet">Тип рейса: </span><span class="winInfo">Прилет</span></p>
+                <p><span class="winlet">Номер рейса:  </span><span class="winInfo">AZ 5215</span></p>
+                <p><span class="winlet">Авиакомпания:  </span><span class="winInfo">Alitalia</span></p>
+                <p><span class="winlet">Тип воздушного судна:  </span><span class="winInfo">Аэробус A310-200</span></p>
+                <p><span class="winlet">Аэропорт назначения:  </span><span class="winInfo">Краснодар (Пашковский)</span></p>
+                <p><span class="winlet">Терминал:  </span><span class="winInfo">D</span></p>
+                <p><span class="winlet">Плановое время:  </span><span class="winInfo"> 10:22</span></p>
+                <p><span class="winlet">Статус рейса:  </span><span class="winInfo">Призмелился</span></p>
+                <p><span class="winlet">Примечание:  </span><span class="winInfo">Выдача багажа</span></p>
+            </div>
+
+        </div>
+    </div>
+</div>
+<div class="window">
+    <input class="window-open" id="window-5" type="checkbox" hidden>
+    <div class="window-wrap" aria-hidden="true" role="dialog">
+        <label class="window-overlay" for="window-5"></label>
+        <div class="window-dialog">
+            <div class="window-header">
+                <h2>ДР 124</h2>
+                <label class="btn-close" for="window-5" aria-hidden="true">×</label>
+            </div>
+            <div class="window-body">
+                <p><span class="winlet">Тип рейса: </span><span class="winInfo">Вылет</span></p>
+                <p><span class="winlet">Номер рейса:  </span><span class="winInfo">ДР 124</span></p>
+                <p><span class="winlet">Авиакомпания:  </span><span class="winInfo">Победа</span></p>
+                <p><span class="winlet">Тип воздушного судна:  </span><span class="winInfo">Аэробус A319</span></p>
+                <p><span class="winlet">Аэропорт назначения:  </span><span class="winInfo">Сочи (Адлер)</span></p>
+                <p><span class="winlet">Терминал:  </span><span class="winInfo">A</span></p>
+                <p><span class="winlet">Плановое время:  </span><span class="winInfo"> 10:50</span></p>
+                <p><span class="winlet">Статус рейса:  </span><span class="winInfo">Ожидание посадки</span></p>
+                <p><span class="winlet">Примечание:  </span><span class="winInfo"></span></p>
+            </div>
+
+        </div>
+    </div>
+</div>
+<div class="window">
+    <input class="window-open" id="window-6" type="checkbox" hidden>
+    <div class="window-wrap" aria-hidden="true" role="dialog">
+        <label class="window-overlay" for="window-6"></label>
+        <div class="window-dialog">
+            <div class="window-header">
+                <h2>UT 798</h2>
+                <label class="btn-close" for="window-6" aria-hidden="true">×</label>
+            </div>
+            <div class="window-body">
+                <p><span class="winlet">Тип рейса: </span><span class="winInfo">Вылет</span></p>
+                <p><span class="winlet">Номер рейса:  </span><span class="winInfo">UT 798</span></p>
+                <p><span class="winlet">Авиакомпания:  </span><span class="winInfo">UTair</span></p>
+                <p><span class="winlet">Тип воздушного судна:  </span><span class="winInfo">Боинг B-777</span></p>
+                <p><span class="winlet">Аэропорт назначения:  </span><span class="winInfo">Вена (Швехат)</span></p>
+                <p><span class="winlet">Терминал:  </span><span class="winInfo">D</span></p>
+                <p><span class="winlet">Плановое время:  </span><span class="winInfo"> 11:17</span></p>
+                <p><span class="winlet">Статус рейса:  </span><span class="winInfo">Регистрация</span></p>
+                <p><span class="winlet">Примечание:  </span><span class="winInfo"></span></p>
+            </div>
+
+        </div>
+    </div>
+</div>
+<div class="window">
+    <input class="window-open" id="window-7" type="checkbox" hidden>
+    <div class="window-wrap" aria-hidden="true" role="dialog">
+        <label class="window-overlay" for="window-7"></label>
+        <div class="window-dialog">
+            <div class="window-header">
+                <h2>PF 443</h2>
+                <label class="btn-close" for="window-7" aria-hidden="true">×</label>
+            </div>
+            <div class="window-body">
+                <p><span class="winlet">Тип рейса: </span><span class="winInfo">Прилет</span></p>
+                <p><span class="winlet">Номер рейса:  </span><span class="winInfo">PF 443</span></p>
+                <p><span class="winlet">Авиакомпания:  </span><span class="winInfo">Пегас</span></p>
+                <p><span class="winlet">Тип воздушного судна:  </span><span class="winInfo">Ильюшин Ил-18</span></p>
+                <p><span class="winlet">Аэропорт назначения:  </span><span class="winInfo">Анталья</span></p>
+                <p><span class="winlet">Терминал:  </span><span class="winInfo">B</span></p>
+                <p><span class="winlet">Плановое время:  </span><span class="winInfo"> 12:56</span></p>
+                <p><span class="winlet">Статус рейса:  </span><span class="winInfo">Летит</span></p>
+                <p><span class="winlet">Примечание:  </span><span class="winInfo"></span></p>
+            </div>
+
+        </div>
+    </div>
+</div>
+<div class="window">
+    <input class="window-open" id="window-8" type="checkbox" hidden>
+    <div class="window-wrap" aria-hidden="true" role="dialog">
+        <label class="window-overlay" for="window-8"></label>
+        <div class="window-dialog">
+            <div class="window-header">
+                <h2>SU 345</h2>
+                <label class="btn-close" for="window-8" aria-hidden="true">×</label>
+            </div>
+            <div class="window-body">
+                <p><span class="winlet">Тип рейса: </span><span class="winInfo">Прилет</span></p>
+                <p><span class="winlet">Номер рейса:  </span><span class="winInfo">SU 345</span></p>
+                <p><span class="winlet">Авиакомпания:  </span><span class="winInfo">Аэрофлот</span></p>
+                <p><span class="winlet">Тип воздушного судна:  </span><span class="winInfo">Ильюшин Ил-62</span></p>
+                <p><span class="winlet">Аэропорт назначения:  </span><span class="winInfo">Женева (Куантран)</span></p>
+                <p><span class="winlet">Терминал:  </span><span class="winInfo">C</span></p>
+                <p><span class="winlet">Плановое время:  </span><span class="winInfo"> 13:21</span></p>
+                <p><span class="winlet">Статус рейса:  </span><span class="winInfo">Летит</span></p>
+                <p><span class="winlet">Примечание:  </span><span class="winInfo"></span></p>
+            </div>
+
+        </div>
+    </div>
+</div>
+<div class="window">
+    <input class="window-open" id="window-9" type="checkbox" hidden>
+    <div class="window-wrap" aria-hidden="true" role="dialog">
+        <label class="window-overlay" for="window-9"></label>
+        <div class="window-dialog">
+            <div class="window-header">
+                <h2>NW 130</h2>
+                <label class="btn-close" for="window-9" aria-hidden="true">×</label>
+            </div>
+            <div class="window-body">
+                <p><span class="winlet">Тип рейса: </span><span class="winInfo">Прилет</span></p>
+                <p><span class="winlet">Номер рейса:  </span><span class="winInfo">NW 130</span></p>
+                <p><span class="winlet">Авиакомпания:  </span><span class="winInfo">Norwind</span></p>
+                <p><span class="winlet">Тип воздушного судна:  </span><span class="winInfo">Боинг B-737</span></p>
+                <p><span class="winlet">Аэропорт назначения:  </span><span class="winInfo">Осло (Гардэмуэн)</span></p>
+                <p><span class="winlet">Терминал:  </span><span class="winInfo">A</span></p>
+                <p><span class="winlet">Плановое время:  </span><span class="winInfo"> 13:56</span></p>
+                <p><span class="winlet">Статус рейса:  </span><span class="winInfo">Отменен</span></p>
+                <p><span class="winlet">Примечание:  </span><span class="winInfo">Снегопад</span></p>
+            </div>
+
+        </div>
+    </div>
+</div>
+</div>
+<section>
+
+
+
+        <div id="header">
+            <div id="headerName">
+                <div id="checkZone">
+                </div>
+                <div id="imageZone1">
+                    <img src="sources/image1.jpg">
+                </div>
+                <div id="imageZone2">
+                    <img src="sources/image2.jpg">
+                </div>
+                <div id="timeZone">
+                    <i>12<span id="timespan3">.08</span><span id="timespan2"> августа</span><span id="timespan1"> 2015</span></i>
+                </div>
+            </div>
+
+            <table id="headerTable">
+                <tr>
+                    <th title="Тип рейс" id="head1">Тип<span id="spanhead1"> рейса</span></th>
+                    <th title="Номер рейса" id="head2">Номер<span id="spanhead2">  рейса</span></th>
+                    <th title="Авиакомпания" id="head3">Авиакомпания</th>
+                    <th title="Тип воздушного судна" id="head4"><span id="spanhead4_1">Самолет</span><span id="spanhead4_2"> Тип воздушного судна</span></th>
+                    <th title="Аэропорт назначения" id="head5">Аэропорт<span id="spanhead5">  назначения</span></th>
+                    <th title="Терминал" id="head6">Терминал</th>
+                    <th title="Плановое время" id="head7">Время</th>
+                    <th title="Статус рейса" id="head8">Статус<span id="spanhead8">  рейса</span></th>
+                    <th title="Примечание" id="head9">Примечание</th>
+                </tr>
+            </table>
+        </div>
+    <div id="container">
+        <input type="checkbox" id="checkboxArrival"form="mainTable" checked="checked"/>
+        <label id="labelArrival">Прилет</label>
+        <input type="checkbox" id="checkboxDeparture" form="mainTable" checked="checked"/>
+        <label id="labelDeparture">Вылет</label>
+        <table id="mainTable">
+
+    <tr class="arrival">
+            <td class="cell1"><label class="btn" for="window-1"><img src="sources/icons/arrivalsicon.png" alt="arrival"><span class="span1"> Прилет</span></label></td><!--Тип-->
+            <td class="cell2" ><label class="btn" for="window-1">AF 984</label></td><!--Номер рейса-->
+            <td class="cell3" ><label class="btn" for="window-1"><img src="sources/companies/airfrance.png" alt="airfrance"><span class="span3"> AirFrance</span></label></td><!--Авиакомпания-->
+            <td class="cell4"><label class="btn" for="window-1"><span class="span4">Боинг </span>B-737</label></td><!--Тип самолета-->
+            <td class="cell5"><label class="btn" for="window-1">Барселона<span class="span5"> (Эль-Прат)</span></label></td><!--Аэропорт назначения-->
+            <td class="cell6"><label class="btn" for="window-1">A</label></td><!--Терминал-->
+            <td class="cell7"><label class="btn" for="window-1"> 05:05</label></td><!--Плановое время вылета/прилета-->
+            <td class="cell8"><label class="btn" for="window-1">Приз<span class="span8">емлился</span></label></td><!--Статус рейса-->
+            <td class="cell9"><label class="btn" for="window-1"></label></td><!--Примечание-->
+        </tr>
+            <tr class="departure">
+                <td class="cell1"><label class="btn" for="window-2"><img src="sources/icons/DepartureIcon.png" alt="departure"><span class="span1"> Вылет</span></label></td><!--Тип-->
+                <td class="cell2"><label class="btn" for="window-2">SU 1852</label></label></td><!--Номер рейса-->
+                <td class="cell3"><label class="btn" for="window-2"><img src="sources/companies/aeroflot.png" alt="aeroflot"><span class="span3"> Аэрофлот</span></label></td><!--Авиакомпания-->
+                <td class="cell4"><label class="btn" for="window-2"><span class="span4">Туполев </span>Ту-154</label></td><!--Тип самолета-->
+                <td class="cell5"><label class="btn" for="window-2">Челябинск<span class="span5"></span></label></td><!--Аэропорт назначения-->
+                <td class="cell6"><label class="btn" for="window-2">B</label></td><!--Терминал-->
+                <td class="cell7"><label class="btn" for="window-2"> 9:00</label></td><!--Плановое время вылета/прилета-->
+                <td class="cell8"><label class="btn" for="window-2">Отпр<span class="span8">авлен</span></label></td><!--Статус рейса-->
+                <td class="cell9"><label class="btn" for="window-2">Кодшеринг: AF 567</label></td><!--Примечание-->
+            </tr>
+            <tr class="departure">
+                <td class="cell1"><label class="btn" for="window-3"><img src="sources/icons/DepartureIcon.png" alt="departure"><span class="span1"> Вылет</span></label></td><!--Тип-->
+                <td class="cell2"><label class="btn" for="window-3">AF 2467</label></td><!--Номер рейса-->
+                <td class="cell3"><label class="btn" for="window-3"><img src="sources/companies/airfrance.png" alt="airfrance"><span class="span3"> AirFrance</span></label></td><!--Авиакомпания-->
+                <td class="cell4"><label class="btn" for="window-3"><span class="span4">Аэробус </span>A310</label></td><!--Тип самолета-->
+                <td class="cell5"><label class="btn" for="window-3">Лондон<span class="span5"> (Хитроу)</span></label></td><!--Аэропорт назначения-->
+                <td class="cell6"><label class="btn" for="window-3">C</label></td><!--Терминал-->
+                <td class="cell7"><label class="btn" for="window-3"> 09:41</label></td><!--Плановое время вылета/прилета-->
+                <td class="cell8"><label class="btn" for="window-3">Зад<span class="span8">ержан до 10:40</span></label></td><!--Статус рейса-->
+                <td class="cell9"><label class="btn" for="window-3"></label></td><!--Примечание-->
+            </tr>
+            <tr class="arrival">
+                <td class="cell1"><label class="btn" for="window-4"><img src="sources/icons/arrivalsicon.png" alt="arrival"><span class="span1"> Прилет</span></label></td><!--Тип-->
+                <td class="cell2"><label class="btn" for="window-4">AZ 5215</label></td><!--Номер рейса-->
+                <td class="cell3"><label class="btn" for="window-4"><img src="sources/companies/alitalia.png" alt="alitalia"><span class="span3"> Alitalia</span></label></td><!--Авиакомпания-->
+                <td class="cell4"><label class="btn" for="window-4"><span class="span4">Аэробус </span>A310-200</label></td><!--Тип самолета-->
+                <td class="cell5"><label class="btn" for="window-4">Краснодар<span class="span5"> (Пашковский)</span></label></td><!--Аэропорт назначения-->
+                <td class="cell6"><label class="btn" for="window-4">D</label></td><!--Терминал-->
+                <td class="cell7"><label class="btn" for="window-4"> 10:22</label></td><!--Плановое время вылета/прилета-->
+                <td class="cell8"><label class="btn" for="window-4">Приз<span class="span8">емлился</span></label></td><!--Статус рейса-->
+                <td class="cell9"><label class="btn" for="window-4">Выдача багажа</label></td><!--Примечание-->
+            </tr>
+            <tr class="departure">
+                <td class="cell1"><label class="btn" for="window-5"><img src="sources/icons/DepartureIcon.png" alt="departure"><span class="span1"> Вылет</span></label></td><!--Тип-->
+                <td class="cell2"><label class="btn" for="window-5">ДР 124</label></td><!--Номер рейса-->
+                <td class="cell3"><label class="btn" for="window-5"><img src="sources/companies/pobeda.png" alt="pobeda"><span class="span3"> Победа</span></label></td><!--Авиакомпания-->
+                <td class="cell4"><label class="btn" for="window-5"><span class="span4">Аэробус </span>A319</label></td><!--Тип самолета-->
+                <td class="cell5"><label class="btn" for="window-5">Сочи<span class="span5"> (Адлер)</span></label></td><!--Аэропорт назначения-->
+                <td class="cell6"><label class="btn" for="window-5">A</label></td><!--Терминал-->
+                <td class="cell7"><label class="btn" for="window-5"> 10:50</label></td><!--Плановое время вылета/прилета-->
+                <td class="cell8"><label class="btn" for="window-5">Ожид<span class="span8">ание посадки</span></label></td><!--Статус рейса-->
+                <td class="cell9"><label class="btn" for="window-5"></label></td><!--Примечание-->
+            </tr>
+            <tr class="departure">
+                <td class="cell1"><label class="btn" for="window-6"><img src="sources/icons/DepartureIcon.png" alt="departure"><span class="span1"> Вылет</span></label></td><!--Тип-->
+                <td class="cell2"><label class="btn" for="window-6">UT 798</label></td><!--Номер рейса-->
+                <td class="cell3"><label class="btn" for="window-6"><img src="sources/companies/utair.png" alt="utair"><span class="span3"> UTair</span></label></td><!--Авиакомпания-->
+                <td class="cell4"><label class="btn" for="window-6"><span class="span4">Боинг </span>B-777</label></td><!--Тип самолета-->
+                <td class="cell5"><label class="btn" for="window-6">Вена<span class="span5"> (Швехат)</span></label></td><!--Аэропорт назначения-->
+                <td class="cell6"><label class="btn" for="window-6">D</label></td><!--Терминал-->
+                <td class="cell7"><label class="btn" for="window-6"> 11:17</label></td><!--Плановое время вылета/прилета-->
+                <td class="cell8"><label class="btn" for="window-6">Рег<span class="span8">истрация</span></label></td><!--Статус рейса-->
+                <td class="cell9"><label class="btn" for="window-6"></label></td><!--Примечание-->
+            </tr>
+            <tr class="arrival">
+                <td class="cell1"><label class="btn" for="window-7"><img src="sources/icons/arrivalsicon.png" alt="arrival"><span class="span1"> Прилет</span></label></td><!--Тип-->
+                <td class="cell2"><label class="btn" for="window-7">PF 443</label></td><!--Номер рейса-->
+                <td class="cell3"><label class="btn" for="window-7"><img src="sources/companies/pegas_fly_50.png" alt="pegas"><span class="span3"> Пегас</span></label></td><!--Авиакомпания-->
+                <td class="cell4"><label class="btn" for="window-7"><span class="span4">Ильюшин </span>Ил-18</label></td><!--Тип самолета-->
+                <td class="cell5"><label class="btn" for="window-7">Анталья<span class="span5"></span></label></td><!--Аэропорт назначения-->
+                <td class="cell6"><label class="btn" for="window-7">B</label></td><!--Терминал-->
+                <td class="cell7"><label class="btn" for="window-7"> 12:56</label></td><!--Плановое время вылета/прилета-->
+                <td class="cell8"><label class="btn" for="window-7">Лет<span class="span8">ит</span></label></td><!--Статус рейса-->
+                <td class="cell9"><label class="btn" for="window-7"></label></td><!--Примечание-->
+            </tr>
+            <tr class="arrival">
+                <td class="cell1"><label class="btn" for="window-8"><img src="sources/icons/arrivalsicon.png" alt="arrival"><span class="span1"> Прилет</span></label></td><!--Тип-->
+                <td class="cell2"><label class="btn" for="window-8">SU 345</label></td><!--Номер рейса-->
+                <td class="cell3"><label class="btn" for="window-8"><img src="sources/companies/aeroflot.png" alt="aeroflot"><span class="span3"> Аэрофлот</span></label></td><!--Авиакомпания-->
+                <td class="cell4"><label class="btn" for="window-8"><span class="span4">Ильюшин </span>Ил-62</label></td><!--Тип самолета-->
+                <td class="cell5"><label class="btn" for="window-8">Женева<span class="span5"> (Куантран)</span></label></td><!--Аэропорт назначения-->
+                <td class="cell6"><label class="btn" for="window-8">С</label></td><!--Терминал-->
+                <td class="cell7"><label class="btn" for="window-8"> 13:21</label></td><!--Плановое время вылета/прилета-->
+                <td class="cell8"><label class="btn" for="window-8">Лет<span class="span8">ит</span></label></td><!--Статус рейса-->
+                <td class="cell9"><label class="btn" for="window-8"></label></td><!--Примечание-->
+            </tr>
+            <tr class="arrival">
+                <td class="cell1"><label class="btn" for="window-9"><img src="sources/icons/arrivalsicon.png" alt="arrival"><span class="span1"> Прилет</span></label></td><!--Тип-->
+                <td class="cell2"><label class="btn" for="window-9">NW 130</label></td><!--Номер рейса-->
+                <td class="cell3"><label class="btn" for="window-9"><img src="sources/companies/nordwind.png" alt="nordwind"><span class="span3"> Norwind</span></label></td><!--Авиакомпания-->
+                <td class="cell4"><label class="btn" for="window-9"><span class="span4">Боинг </span>B-737</label></td><!--Тип самолета-->
+                <td class="cell5"><label class="btn" for="window-9">Осло<span class="span5"> (Гардэмуэн)</span></label></td><!--Аэропорт назначения-->
+                <td class="cell6"><label class="btn" for="window-9">A</label></td><!--Терминал-->
+                <td class="cell7"><label class="btn" for="window-9"> 13:56</label></td><!--Плановое время вылета/прилета-->
+                <td class="cell8"><label class="btn" for="window-9">Отм<span class="span8">енен</span></label></td><!--Статус рейса-->
+                <td class="cell9"><label class="btn" for="window-9">Снегопад</label></td><!--Примечание-->
+            </tr>
+            <tr class="arrival">
+                <td class="cell1"><label class="btn" for="window-1"><img src="sources/icons/arrivalsicon.png" alt="arrival"><span class="span1"> Прилет</span></label></td><!--Тип-->
+                <td class="cell2" ><label class="btn" for="window-1">AF 984</label></td><!--Номер рейса-->
+                <td class="cell3" ><label class="btn" for="window-1"><img src="sources/companies/airfrance.png" alt="airfrance"><span class="span3"> AirFrance</span></label></td><!--Авиакомпания-->
+                <td class="cell4"><label class="btn" for="window-1"><span class="span4">Боинг </span>B-737</label></td><!--Тип самолета-->
+                <td class="cell5"><label class="btn" for="window-1">Бар<span class="span5_1">селона</span><span class="span5_2"> (Эль-Прат)</span></label></td><!--Аэропорт назначения-->
+                <td class="cell6"><label class="btn" for="window-1">A</label></td><!--Терминал-->
+                <td class="cell7"><label class="btn" for="window-1"> 05:05</label></td><!--Плановое время вылета/прилета-->
+                <td class="cell8"><label class="btn" for="window-1">Приз<span class="span8">емлился</span></label></td><!--Статус рейса-->
+                <td class="cell9"><label class="btn" for="window-1"></label></td><!--Примечание-->
+            </tr>
+            <tr class="departure">
+                <td class="cell1"><label class="btn" for="window-2"><img src="sources/icons/DepartureIcon.png" alt="departure"><span class="span1"> Вылет</span></label></td><!--Тип-->
+                <td class="cell2"><label class="btn" for="window-2">SU 1852</label></label></td><!--Номер рейса-->
+                <td class="cell3"><label class="btn" for="window-2"><img src="sources/companies/aeroflot.png" alt="aeroflot"><span class="span3"> Аэрофлот</span></label></td><!--Авиакомпания-->
+                <td class="cell4"><label class="btn" for="window-2"><span class="span4">Туполев </span>Ту-154</label></td><!--Тип самолета-->
+                <td class="cell5"><label class="btn" for="window-2">Челяб<span class="span5_1">инск</span><span class="span5_2"></span></label></td><!--Аэропорт назначения-->
+                <td class="cell6"><label class="btn" for="window-2">B</label></td><!--Терминал-->
+                <td class="cell7"><label class="btn" for="window-2"> 9:00</label></td><!--Плановое время вылета/прилета-->
+                <td class="cell8"><label class="btn" for="window-2">Отпр<span class="span8">авлен</span></label></td><!--Статус рейса-->
+                <td class="cell9"><label class="btn" for="window-2"></label></td><!--Примечание-->
+            </tr>
+            <tr class="departure">
+                <td class="cell1"><label class="btn" for="window-3"><img src="sources/icons/DepartureIcon.png" alt="departure"><span class="span1"> Вылет</span></label></td><!--Тип-->
+                <td class="cell2"><label class="btn" for="window-3">AF 2467</label></td><!--Номер рейса-->
+                <td class="cell3"><label class="btn" for="window-3"><img src="sources/companies/airfrance.png" alt="airfrance"><span class="span3"> AirFrance</span></label></td><!--Авиакомпания-->
+                <td class="cell4"><label class="btn" for="window-3"><span class="span4">Аэробус </span>A310</label></td><!--Тип самолета-->
+                <td class="cell5"><label class="btn" for="window-3">Лонд<span class="span5_1">он</span><span class="span5_2"> (Хитроу)</span></label></td><!--Аэропорт назначения-->
+                <td class="cell6"><label class="btn" for="window-3">C</label></td><!--Терминал-->
+                <td class="cell7"><label class="btn" for="window-3"> 09:41</label></td><!--Плановое время вылета/прилета-->
+                <td class="cell8"><label class="btn" for="window-3">Зад<span class="span8">ержан до 10:40</span></label></td><!--Статус рейса-->
+                <td class="cell9"><label class="btn" for="window-3"></label></td><!--Примечание-->
+            </tr>
+            <tr class="arrival">
+                <td class="cell1"><label class="btn" for="window-4"><img src="sources/icons/arrivalsicon.png" alt="arrival"><span class="span1"> Прилет</span></label></td><!--Тип-->
+                <td class="cell2"><label class="btn" for="window-4">AZ 5215</label></td><!--Номер рейса-->
+                <td class="cell3"><label class="btn" for="window-4"><img src="sources/companies/alitalia.png" alt="alitalia"><span class="span3"> Alitalia</span></label></td><!--Авиакомпания-->
+                <td class="cell4"><label class="btn" for="window-4"><span class="span4">Аэробус </span>A310-200</label></td><!--Тип самолета-->
+                <td class="cell5"><label class="btn" for="window-4">Красн<span class="span5_1">одар</span><span class="span5_2"> (Пашковский)</span></label></td><!--Аэропорт назначения-->
+                <td class="cell6"><label class="btn" for="window-4">D</label></td><!--Терминал-->
+                <td class="cell7"><label class="btn" for="window-4"> 10:22</label></td><!--Плановое время вылета/прилета-->
+                <td class="cell8"><label class="btn" for="window-4">Приз<span class="span8">емлился</span></label></td><!--Статус рейса-->
+                <td class="cell9"><label class="btn" for="window-4">Выдача багажа</label></td><!--Примечание-->
+            </tr>
+            <tr class="departure">
+                <td class="cell1"><label class="btn" for="window-5"><img src="sources/icons/DepartureIcon.png" alt="departure"><span class="span1"> Вылет</span></label></td><!--Тип-->
+                <td class="cell2"><label class="btn" for="window-5">ДР 124</label></td><!--Номер рейса-->
+                <td class="cell3"><label class="btn" for="window-5"><img src="sources/companies/pobeda.png" alt="pobeda"><span class="span3"> Победа</span></label></td><!--Авиакомпания-->
+                <td class="cell4"><label class="btn" for="window-5"><span class="span4">Аэробус </span>A319</label></td><!--Тип самолета-->
+                <td class="cell5"><label class="btn" for="window-5">Сочи<span class="span5_1"></span><span class="span5_2"> (Адлер)</span></label></td><!--Аэропорт назначения-->
+                <td class="cell6"><label class="btn" for="window-5">A</label></td><!--Терминал-->
+                <td class="cell7"><label class="btn" for="window-5"> 10:50</label></td><!--Плановое время вылета/прилета-->
+                <td class="cell8"><label class="btn" for="window-5">Ожид<span class="span8">ание посадки</span></label></td><!--Статус рейса-->
+                <td class="cell9"><label class="btn" for="window-5"></label></td><!--Примечание-->
+            </tr>
+            <tr class="departure">
+                <td class="cell1"><label class="btn" for="window-6"><img src="sources/icons/DepartureIcon.png" alt="departure"><span class="span1"> Вылет</span></label></td><!--Тип-->
+                <td class="cell2"><label class="btn" for="window-6">UT 798</label></td><!--Номер рейса-->
+                <td class="cell3"><label class="btn" for="window-6"><img src="sources/companies/utair.png" alt="utair"><span class="span3"> UTair</span></label></td><!--Авиакомпания-->
+                <td class="cell4"><label class="btn" for="window-6"><span class="span4">Боинг </span>B-777</label></td><!--Тип самолета-->
+                <td class="cell5"><label class="btn" for="window-6">Вена<span class="span5_1"></span><span class="span5_2"> (Швехат)</span></label></td><!--Аэропорт назначения-->
+                <td class="cell6"><label class="btn" for="window-6">D</label></td><!--Терминал-->
+                <td class="cell7"><label class="btn" for="window-6"> 11:17</label></td><!--Плановое время вылета/прилета-->
+                <td class="cell8"><label class="btn" for="window-6">Рег<span class="span8">истрация</span></label></td><!--Статус рейса-->
+                <td class="cell9"><label class="btn" for="window-6"></label></td><!--Примечание-->
+            </tr>
+            <tr class="arrival">
+                <td class="cell1"><label class="btn" for="window-7"><img src="sources/icons/arrivalsicon.png" alt="arrival"><span class="span1"> Прилет</span></label></td><!--Тип-->
+                <td class="cell2"><label class="btn" for="window-7">PF 443</label></td><!--Номер рейса-->
+                <td class="cell3"><label class="btn" for="window-7"><img src="sources/companies/pegas_fly_50.png" alt="pegas"><span class="span3"> Пегас</span></label></td><!--Авиакомпания-->
+                <td class="cell4"><label class="btn" for="window-7"><span class="span4">Ильюшин </span>Ил-18</label></td><!--Тип самолета-->
+                <td class="cell5"><label class="btn" for="window-7">Ант<span class="span5_1">алья</span><span class="span5_2"></span></label></td><!--Аэропорт назначения-->
+                <td class="cell6"><label class="btn" for="window-7">B</label></td><!--Терминал-->
+                <td class="cell7"><label class="btn" for="window-7"> 12:56</label></td><!--Плановое время вылета/прилета-->
+                <td class="cell8"><label class="btn" for="window-7">Лет<span class="span8">ит</span></label></td><!--Статус рейса-->
+                <td class="cell9"><label class="btn" for="window-7"></label></td><!--Примечание-->
+            </tr>
+            <tr class="arrival">
+                <td class="cell1"><label class="btn" for="window-8"><img src="sources/icons/arrivalsicon.png" alt="arrival"><span class="span1"> Прилет</span></label></td><!--Тип-->
+                <td class="cell2"><label class="btn" for="window-8">SU 345</label></td><!--Номер рейса-->
+                <td class="cell3"><label class="btn" for="window-8"><img src="sources/companies/aeroflot.png" alt="aeroflot"><span class="span3"> Аэрофлот</span></label></td><!--Авиакомпания-->
+                <td class="cell4"><label class="btn" for="window-8"><span class="span4">Ильюшин </span>Ил-62</label></td><!--Тип самолета-->
+                <td class="cell5"><label class="btn" for="window-8">Жен<span class="span5_1">ева</span><span class="span5_2"> (Куантран)</span></label></td><!--Аэропорт назначения-->
+                <td class="cell6"><label class="btn" for="window-8">С</label></td><!--Терминал-->
+                <td class="cell7"><label class="btn" for="window-8"> 13:21</label></td><!--Плановое время вылета/прилета-->
+                <td class="cell8"><label class="btn" for="window-8">Лет<span class="span8">ит</span></label></td><!--Статус рейса-->
+                <td class="cell9"><label class="btn" for="window-8"></label></td><!--Примечание-->
+            </tr>
+            <tr class="arrival">
+                <td class="cell1"><label class="btn" for="window-9"><img src="sources/icons/arrivalsicon.png" alt="arrival"><span class="span1"> Прилет</span></label></td><!--Тип-->
+                <td class="cell2"><label class="btn" for="window-9">NW 130</label></td><!--Номер рейса-->
+                <td class="cell3"><label class="btn" for="window-9"><img src="sources/companies/nordwind.png" alt="nordwind"><span class="span3"> Norwind</span></label></td><!--Авиакомпания-->
+                <td class="cell4"><label class="btn" for="window-9"><span class="span4">Боинг </span>B-737</label></td><!--Тип самолета-->
+                <td class="cell5"><label class="btn" for="window-9">Осло<span class="span5_1"></span><span class="span5_2"> (Гардэмуэн)</span></label></td><!--Аэропорт назначения-->
+                <td class="cell6"><label class="btn" for="window-9">A</label></td><!--Терминал-->
+                <td class="cell7"><label class="btn" for="window-9"> 13:56</label></td><!--Плановое время вылета/прилета-->
+                <td class="cell8"><label class="btn" for="window-9">Отм<span class="span8">енен</span></label></td><!--Статус рейса-->
+                <td class="cell9"><label class="btn" for="window-9">В связи с погодными условиями</label></td><!--Примечание-->
+            </tr>
+</table>
+    </div>
+</section>
+</body>
+</html>

@@ -1,0 +1,96 @@
+@charset "utf-8";
+#timespan3, #spanhead4_1{
+    display: none;
+}
+@media screen and (max-width: 1650px) {
+   #timespan1 {
+        display: none;
+    }
+    #headerTable th {
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 1450px) {
+    #head6, .cell6{
+        display: none;
+    }
+
+
+
+}
+@media screen and (max-width: 1240px) {
+    .span3, .span5{
+        display: none;
+    }
+    .cell3 .btn img{
+        float: inherit;
+        margin-left: 1px;
+    }
+}
+@media screen and (max-width: 1150px){
+    #head9, .cell9, #timespan2  {
+        display: none;
+    }
+    #timespan3{
+        display: initial;
+    }
+}
+@media screen and (max-width: 1100px){
+    .span1, #spanhead1, #spanhead2, #spanhead4_2, #spanhead5, #spanhead8{
+        display: none;
+    }
+    .cell1 .btn img{
+        float: inherit;
+        margin-left: 1px;
+    }
+    #spanhead4_1{
+        display: initial;
+    }
+    #head7, .cell7{
+        width: 8%;
+    }
+    #head1, .cell1{
+        width: 7%;
+    }
+}
+@media screen and (max-width: 770px){
+    .span4{
+        display: none;
+    }
+    .cell3 .btn img {
+        width: 80px;
+        height: 40px;
+        margin-top: -12px;
+    }
+    #mainTable{
+        font-size: 14px;
+    }
+    #headerTable th {
+        font-size: 18px;
+    }
+    .cell1 .btn img{
+        width: 30px;
+        height: 30px;
+        margin-top: -5px;
+    }
+    #labelArrival, #labelDeparture{
+        left: 8%;
+    }
+    #checkboxArrival, #checkboxDeparture {
+        left: 2%;
+    }
+}
+
+@media screen and (max-width: 620px){
+    #head4, .cell4, #head5, .cell5{
+        display: none;
+    }
+    #labelArrival, #labelDeparture{
+        left: 7%;
+    }
+    #checkboxArrival, #checkboxDeparture {
+        left: 1%;
+    }
+}
+
+
