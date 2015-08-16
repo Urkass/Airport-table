@@ -1,4 +1,4 @@
-@charset "utf-8";
+
 #timespan3, #spanhead4_1{
     display: none;
 }
@@ -14,9 +14,6 @@
     #head6, .cell6{
         display: none;
     }
-
-
-
 }
 @media screen and (max-width: 1240px) {
     .span3, .span5{

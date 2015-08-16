@@ -19,6 +19,7 @@
     color: #ffa;
 }
 /* слой затемнения */
+/*blackout layer*/
 .window-wrap:before {
     content: "";
     display: none;
@@ -40,6 +41,7 @@
     z-index: 52;
 }
 /* активация слоя затемнения и окна */
+/*blackout layer activation & window activation*/
 .window-open:checked ~ .window-wrap:before,
 .window-open:checked ~ .window-wrap .window-overlay {
     display: block;
@@ -52,6 +54,7 @@
     top: 20%;
 }
 /* элементы окна */
+/* elements of window*/
 .window-dialog {
     background: #EBEBEB;
     border: none;

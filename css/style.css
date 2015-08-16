@@ -4,14 +4,14 @@ html, body{
     height: 100%;
     background: #2f283f;
     font-family: "Roboto", helvetica, arial, sans-serif;
-    min-width: 600px;
+    min-width: 580px;
 
 }
 table {
     table-layout: fixed;
     width: 100%;
 }
-/* шапка */
+/* С€Р°РїРєР° */
 #header{
     background:#2f283f;
     height: 125px;
@@ -20,12 +20,14 @@ table {
     top: 0;
 
 }
-/* верхняя часть шапки*/
+/* РІРµСЂС…РЅСЏСЏ С‡Р°СЃС‚СЊ С€Р°РїРєРё*/
+/* top part of the header*/
 #headerName{
     background:white;
     height: 65px;
 }
-/* Элементы верхней части шапки: headerName*/
+/* Р­Р»РµРјРµРЅС‚С‹ РІРµСЂС…РЅРµР№ С‡Р°СЃС‚Рё С€Р°РїРєРё: headerName*/
+/* elements of top part of the header*/
 #checkZone{
     box-sizing:border-box;
     -moz-box-sizing:border-box;
@@ -36,7 +38,6 @@ table {
     width: 20%;
     background-color: #EBEBEB;
     border-right: 4px solid #9ea7af
-    /*background-image: linear-gradient(to bottom, #2f283f, #9ea7af);*/
 }
 #imageZone1{
     position: relative;
@@ -62,7 +63,6 @@ table {
     height: 65px;
     float: right;
     background-color: #EBEBEB;
-    /*background-image: linear-gradient(to bottom, #2f283f, #9ea7af);*/
     width: 20%;
     text-align: center;
     vertical-align: middle;
@@ -71,12 +71,14 @@ table {
     font-size: 42px;
     color: #2f283f;
 }
-/*Нижняя часть шапки*/
+/*РќРёР¶РЅСЏСЏ С‡Р°СЃС‚СЊ С€Р°РїРєРё*/
+/* bottom part of the header*/
 #headerTable{
     border-top: 4px solid #9ea7af;
     border-bottom: 4px solid #9ea7af;
 }
-/* Элементы нижней части шапки headerTable*/
+/* Р­Р»РµРјРµРЅС‚С‹ РЅРёР¶РЅРµР№ С‡Р°СЃС‚Рё С€Р°РїРєРё headerTable*/
+/* elements of bottom part of the header*/
 #headerTable tr{
     height: 50px;
 }
@@ -86,14 +88,17 @@ table {
     background: #2f283f;
     color:#D5DDE5;
 }
-/* Таблица */
+/* РўР°Р±Р»РёС†Р° */
+/* table */
 #container{
     padding-top: 126px;
 }
 #mainTable {
     position: relative;
-    /* nth-child не подходит, т.к. при выводе только прилетов/отлетов сбивется
-    nth-type тоже не подходит, т.к. для его использования надо сильно реструктурировать таблицу*/
+    /* nth-child РЅРµ РїРѕРґС…РѕРґРёС‚, С‚.Рє. РїСЂРё РІС‹РІРѕРґРµ С‚РѕР»СЊРєРѕ РїСЂРёР»РµС‚РѕРІ/РѕС‚Р»РµС‚РѕРІ СЃР±РёРІРµС‚СЃСЏ
+    nth-type С‚РѕР¶Рµ РЅРµ РїРѕРґС…РѕРґРёС‚, С‚.Рє. РґР»СЏ РµРіРѕ РёСЃРїРѕР»СЊР·РѕРІР°РЅРёСЏ РЅР°РґРѕ СЃРёР»СЊРЅРѕ СЂРµСЃС‚СЂСѓРєС‚СѓСЂРёСЂРѕРІР°С‚СЊ С‚Р°Р±Р»РёС†Сѓ*/
+    /*nth-child doesn't work with showing only arrival/departure
+    nth-type needs global reconstruction of table, so I'm using cheating linear-gradient*/
     background: -webkit-repeating-linear-gradient(#EBEBEB 73px, #EBEBEB 146px, #fafafa 146px, #fafafa 219px);
     background: repeating-linear-gradient(#EBEBEB 73px, #EBEBEB 146px, #fafafa 146px, #fafafa 219px);
     height: 100%;
@@ -104,7 +109,6 @@ table {
     overflow: hidden;
 }
 #mainTable tr{
-    /*background:#fafafa;*/
     color:#666B85;
     font-weight:normal;
 }
@@ -167,7 +171,8 @@ table {
     width: 17%;
 }
 
- /* чекбоксы */
+/* С‡РµРєР±РѕРєСЃС‹ */
+/*checkboxes*/
 #checkboxArrival:not(:checked) ~ * tr.arrival{
     display: none;
 }
@@ -193,12 +198,12 @@ table {
 #labelDeparture{
     top: 38px;
 }
-/* ховеры */
+/* С…РѕРІРµСЂС‹ */
 tbody td:hover {
-     background: #ffa;
      color: #2f283f;
  }
-/* т.к. у столбца нету своего тега, использую данный метод подстветки, создает элемент шириной с ячейку, убираем на задний план z-index'ом*/
+/* С‚.Рє. Сѓ СЃС‚РѕР»Р±С†Р° РЅРµС‚Сѓ СЃРІРѕРµРіРѕ С‚РµРіР°, РёСЃРїРѕР»СЊР·СѓСЋ РґР°РЅРЅС‹Р№ РјРµС‚РѕРґ РїРѕРґСЃС‚РІРµС‚РєРё, СЃРѕР·РґР°РµС‚ СЌР»РµРјРµРЅС‚ С€РёСЂРёРЅРѕР№ СЃ СЏС‡РµР№РєСѓ, СѓР±РёСЂР°РµРј РЅР° Р·Р°РґРЅРёР№ РїР»Р°РЅ z-index'РѕРј*/
+/* using method of highlighting columns that creates an element with width equal to width of cell and hide it to the background with z-index*/
 #mainTable td:hover::after {
     background-color: #ffa;
     opacity: 0.4;
@@ -210,7 +215,8 @@ tbody td:hover {
     width: 100%;
     z-index: 1;
 }
-/* к строчке применю тот же метод (вместо td:hover)*/
+/* Рє СЃС‚СЂРѕС‡РєРµ РїСЂРёРјРµРЅСЋ С‚РѕС‚ Р¶Рµ РјРµС‚РѕРґ (РІРјРµСЃС‚Рѕ td:hover)*/
+/* the same method to the row (instead td:hover)*/
 #mainTable td:hover::before {
     background-color: #ffa;
     opacity: 0.4;
